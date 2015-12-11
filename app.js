@@ -8,6 +8,7 @@ app.controller('StoreController', function(){
     name: 'Funky Cold Madena',
     price: 2000,
     description: 'dis dat super duper fly stuff!',
+    soldOut: false,
   };
 
 })();
