@@ -9,11 +9,7 @@
   <!-- controller to show all the products -->
   <body ng-controller="StoreController as store">
     <div class="row well" ng-repeat="product in store.products">
-      <div>
-        <h1> {{ product.name }}</h1>
-        <h2 class="lead"> {{ product.price | currency }}</h2>
-        <h3> {{ product.description }}</h3>
-      </div>
+      <product-info></product-info>
       <!-- show product reviews -->
       <div class="panel" ng-repeat="review in product.reviews">
         <strong> {{ review.stars}} Stars</strong>
