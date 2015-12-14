@@ -25,4 +25,11 @@ app.controller('ReviewController', function(){
 
 });
 
+app.directive('productInfo', function(){
+  return {
+    restrict: 'A',
+    templateUrl: 'product-info.html'
+  };
+});
+
 })();
