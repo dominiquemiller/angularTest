@@ -15,4 +15,13 @@ app.controller('StoreController', function(){
   { name: 'cubic sillyness', price: 300, description: 'mid grade generic', reviews: [] }
 ];
 
+app.controller('ReviewController', function(){
+  this.review = {};
+    this.addReview = function(product) {
+      product.reviews.push(this.review);
+      this.review = {};
+    };
+
+});
+
 })();
